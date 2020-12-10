@@ -8089,7 +8089,8 @@
                     {
                         "token": []
                     }
-                ]
+                ],
+                "schema": "#/components/schemas/StudyPlan"
             }
         },
         "/api/v2/study-plans/{id}": {
@@ -8163,7 +8164,8 @@
                     {
                         "token": []
                     }
-                ]
+                ],
+                "schema": "#/components/schemas/StudyPlan"
             }
         },
         "/api/v2/study-plans/compare-program/{id}": {
@@ -11051,7 +11053,8 @@
                         "type": "string"
                     },
                     "studentUser": {
-                        "$ref": "#/components/schemas/User"
+                        "$ref": "#/components/schemas/User",
+                        "field-type": "extra"
                     },
                     "activeVersion": {
                         "description": "activeVersion description here",
@@ -11068,6 +11071,7 @@
                     },
                     "terms": {
                         "type": "array",
+                        "field-type": "additional",
                         "items": {
                             "$ref": "#/components/schemas/Term"
                         }
